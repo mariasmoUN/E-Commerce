@@ -1,0 +1,44 @@
+:root {
+    --dark-hr: #494a4d;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    border: 1px solid rebeccapurple;
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem 2rem;
+    align-items: center;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.icons-conatiner {
+    border: 1px solid teal;
+}
+
+.search-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-right: .6rem;
+}
+
+.search-btn img {
+    width: 2rem;
+}
+
+.link-login img {
+    width: 2rem;
+}
