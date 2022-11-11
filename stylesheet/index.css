@@ -1,5 +1,15 @@
+@font-face {
+    font-family: 'Anurati';
+    src: url(../assets/fonts/Anurati-Regular.woff) format('woff');
+}
+
 :root {
-    --dark-hr: #494a4d;
+    --dark-hr: #494A4D;
+    --cultured-lg: #F5F5F5;
+    --cultured-md: #ECECEC;
+    --black: #000000;
+    --dark-grey: #2F3132;
+    --grey: #252A2C;
 }
 
 * {
@@ -12,21 +22,47 @@ html {
     font-size: 62.5%;
 }
 
+/* Header */
+
 header {
     border: 1px solid rebeccapurple;
     display: flex;
     justify-content: space-between;
-    padding: .8rem 2rem;
+    padding: 1rem 2rem;
     align-items: center;
+}
+
+.container_menu--header span {
+    color: var(--grey);
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' -0,
+    'opsz' 48
+  }
+
+.logo--header {
+    text-decoration: none;
+    font-family: 'Anurati';
+    font-size: 2rem;
+    letter-spacing: 4px;
+    color: var(--black);
+    margin-left: 2rem;
 }
 
 .nav-menu {
     display: none;
 }
 
-.icons-conatiner {
+/* .icons-conatiner {
     border: 1px solid teal;
-}
+} */
 
 .search-btn {
     cursor: pointer;
@@ -35,10 +71,14 @@ header {
     margin-right: .6rem;
 }
 
-.search-btn img {
-    width: 2rem;
+/* .search-btn img {
+    width: 2.3rem;
+} */
+
+.search-btn span {
+    color: var(--grey);
 }
 
 .link-login img {
-    width: 2rem;
+    width: 2.3rem;
 }
