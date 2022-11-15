@@ -25,7 +25,6 @@ html {
 /* Header */
 
 header {
-    border: 1px solid rebeccapurple;
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
@@ -73,4 +72,33 @@ header {
 
 .link-login span {
     color: var(--grey);
+}
+
+/* Banner */
+.container--banner {
+    border: 1px solid firebrick;
+    background-image: url(../assets/images/img-banner-sm.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding: 2rem;
+}
+
+.container_text--banner p {
+    color: var(--cultured-lg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container_text--banner p:nth-child(1) {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 5rem 0 .8rem 0;
+}
+
+.container_text--banner p:nth-child(2) {
+    font-size: 1.6rem;
+    margin-bottom: .8rem;
+}
+
+.container_text--banner button {
+    
 }
