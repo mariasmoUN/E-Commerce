@@ -60,10 +60,6 @@ header {
     display: none;
 }
 
-/* .icons-conatiner {
-    border: 1px solid teal;
-} */
-
 .search-btn {
     cursor: pointer;
     background: none;
@@ -71,14 +67,10 @@ header {
     margin-right: .6rem;
 }
 
-/* .search-btn img {
-    width: 2.3rem;
-} */
-
 .search-btn span {
     color: var(--grey);
 }
 
-.link-login img {
-    width: 2.3rem;
+.link-login span {
+    color: var(--grey);
 }

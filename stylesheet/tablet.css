@@ -1,0 +1,21 @@
+/* Header */
+header {
+    padding: 1.5rem 2rem;
+}
+
+.container_menu--header span {
+    font-size: xx-large;
+}
+
+.logo--header {
+    font-size: 3rem;
+    margin-left: 6rem;
+}
+
+.search-btn span {
+    font-size: xx-large;
+}
+
+.link-login span {
+    font-size: xx-large;
+}

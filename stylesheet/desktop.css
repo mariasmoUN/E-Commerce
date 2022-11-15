@@ -1,0 +1,13 @@
+/* Header */
+header {
+    padding: 1.5rem 6rem;
+}
+
+.container_menu--header {
+    display: none;
+}
+
+.logo--header {
+    font-size: 2.5rem;
+    margin-left: 0;
+}
