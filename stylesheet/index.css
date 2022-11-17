@@ -77,9 +77,10 @@ header {
 /* Banner */
 .container--banner {
     border: 1px solid firebrick;
-    background-image: url(../assets/images/img-banner-sm.jpg);
+    background-image: url(../assets/images/banner-image.png);
     background-repeat: no-repeat;
-    object-fit: cover;
+    background-position: center;
+    background-size: cover;
     padding: 2rem;
 }
 
@@ -89,9 +90,9 @@ header {
 }
 
 .container_text--banner p:nth-child(1) {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
-    margin: 5rem 0 .8rem 0;
+    margin: 7rem 0 .8rem 0;
 }
 
 .container_text--banner p:nth-child(2) {
@@ -100,5 +101,10 @@ header {
 }
 
 .container_text--banner button {
-    
+    padding: 1rem 1.5rem;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #2A7AE4;
+    color: white;
+    font-size: 1.6rem;
 }
