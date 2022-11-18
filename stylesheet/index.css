@@ -76,7 +76,6 @@ header {
 
 /* Banner */
 .container--banner {
-    border: 1px solid firebrick;
     background-image: url(../assets/images/banner-image.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -86,7 +85,6 @@ header {
 
 .container_text--banner p {
     color: var(--cultured-lg);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .container_text--banner p:nth-child(1) {
@@ -103,8 +101,56 @@ header {
 .container_text--banner button {
     padding: 1rem 1.5rem;
     border: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #2A7AE4;
     color: white;
     font-size: 1.6rem;
+}
+
+/* Sección Productos */
+.sec_galeriaProductos {
+    border: 2px dotted firebrick;
+    padding: 0 2rem;
+}
+
+.container-tipoProducto {
+    border: 2px solid blue;
+}
+
+.titulo-tipoProducto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.titulo-tipoProducto h2 {
+    font-size: 2rem;
+    color: var(--dark-grey);
+}
+
+.titulo-tipoProducto div {
+    display: flex;
+    align-items: center;
+}
+
+.titulo-tipoProducto div p {
+    font-size: 1.6rem;
+    margin-right: .3rem;
+}
+
+.titulo-tipoProducto div span {
+    font-size: 1.8rem;
+}
+
+.cards-container-producto {
+    border: 1px solid purple;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 13rem 13rem;
+    grid-template-rows: 13rem 13rem;
+    column-gap: 5rem;
+}
+
+.card-producto picture img {
+    width: 15rem;
 }
