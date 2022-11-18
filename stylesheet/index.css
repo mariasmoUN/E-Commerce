@@ -180,7 +180,6 @@ header {
 
 /* Links y formulario */
 .container-info_contacto {
-    border: 2px dotted firebrick;
     padding: 0 2rem;
     background-color: lightgrey;
 }
@@ -218,7 +217,6 @@ header {
 }
 
 .container_form {
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
 }
@@ -262,7 +260,6 @@ header {
     }
 
     .container_btn-form {
-        border: 1px solid purple;
         margin-bottom: 1.5rem;
     }
 
@@ -272,4 +269,15 @@ header {
     background-color: #2A7AE4;
     color: white;
     font-size: 1.4rem;
+}
+
+/* Footer */
+.container-footer {
+    border: 1px solid blue;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.container-footer p {
+    font-size: 1.2rem;
 }
