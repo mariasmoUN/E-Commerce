@@ -90,12 +90,12 @@ header {
 .container_text--banner p:nth-child(1) {
     font-size: 3rem;
     font-weight: bold;
-    margin: 7rem 0 .8rem 0;
+    margin: 7rem 0 1rem 0;
 }
 
 .container_text--banner p:nth-child(2) {
     font-size: 1.6rem;
-    margin-bottom: .8rem;
+    margin-bottom: 1.5rem;
 }
 
 .container_text--banner button {
@@ -110,10 +110,15 @@ header {
 .sec_galeriaProductos {
     border: 2px dotted firebrick;
     padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container-tipoProducto {
-    border: 2px solid blue;
+    max-width: 32.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid lightgray;
 }
 
 .titulo-tipoProducto {
@@ -143,14 +148,34 @@ header {
 }
 
 .cards-container-producto {
-    border: 1px solid purple;
     width: 100%;
-    display: grid;
-    grid-template-columns: 13rem 13rem;
-    grid-template-rows: 13rem 13rem;
-    column-gap: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-producto {
+    margin-bottom: 2rem;
 }
 
 .card-producto picture img {
     width: 15rem;
+    margin-bottom: .8rem;
+}
+
+.card-producto .infoCard-Container p:nth-child(1) {
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+}
+
+.card-producto .infoCard-Container p:nth-child(2) {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.card-producto .infoCard-Container a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #000000;
 }
