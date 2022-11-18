@@ -108,7 +108,6 @@ header {
 
 /* Sección Productos */
 .sec_galeriaProductos {
-    border: 2px dotted firebrick;
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
@@ -118,7 +117,6 @@ header {
 .container-tipoProducto {
     max-width: 32.5rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid lightgray;
 }
 
 .titulo-tipoProducto {
@@ -178,4 +176,100 @@ header {
     font-size: 1.6rem;
     text-decoration: none;
     color: #000000;
+}
+
+/* Links y formulario */
+.container-info_contacto {
+    border: 2px dotted firebrick;
+    padding: 0 2rem;
+    background-color: lightgrey;
+}
+
+.container-info_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.logo-info_links {
+    margin: 2rem 0;
+}
+
+.logo-info_links a {
+    text-decoration: none;
+    font-family: 'Anurati';
+    font-size: 2rem;
+    letter-spacing: 4px;
+    color: var(--black);
+}
+
+.links-info_links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.links-info_links a {
+    font-size: 1.6rem;
+    margin-bottom: .8rem;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.container_form {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_form h2 {
+    font-size: 1.8rem;
+    margin-bottom: .8rem;
+}
+
+.container_inputs-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    padding: .8rem;
+    border-radius: 3px;
+}
+
+.container_input label {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+.container_input input {
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+}
+
+.container_input textarea {
+    resize: none;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    }
+
+    .container_btn-form {
+        border: 1px solid purple;
+        margin-bottom: 1.5rem;
+    }
+
+.container_btn-form button {
+    padding: 1rem 1.5rem;
+    border: none;
+    background-color: #2A7AE4;
+    color: white;
+    font-size: 1.4rem;
 }
