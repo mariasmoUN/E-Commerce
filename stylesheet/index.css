@@ -1,25 +1,46 @@
-@font-face {
-    font-family: 'Anurati';
-    src: url(../assets/fonts/Anurati-Regular.woff) format('woff');
-}
-
 :root {
-    --dark-hr: #494A4D;
-    --cultured-lg: #F5F5F5;
-    --cultured-md: #ECECEC;
-    --black: #000000;
-    --dark-grey: #2F3132;
-    --grey: #252A2C;
+    --dark: #1B1D21;
+    --white: #FFFFFF;   /* - */
+    --light-grey: #8D8E90;
+    --dark-grey: #494A4D; /* - */
+    --primary: #6C5DD3;
+    --primary-bg: #8072DC; /* - */
+    --primary-md: #9D92E9;
+    --primary-sm: #CFC8FF;
+    --secondary: #0049C6;
+    --secondary-bg: #3F8CFF;
+    --secondary-md: #A0D7E7;
+    --secondary-sm: #CDF4FF;
+    --accent1: #FFA2C0;
+    --accent1-bg: #FF78A4;
+    --accent1-md: #FFC6DB;
+    --accent1-sm: #FFBED3;
+    --accent2: #FFCE73;
+    --accent2-bg: #FFA25F;
+    --accent2-md: #FFE2AB;
+    --accent2-sm: #FFDD9D;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
 }
 
 html {
     font-size: 62.5%;
+}
+
+/* Iconos de Google */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' -0,
+    'opsz' 48
 }
 
 /* Header */
@@ -31,52 +52,44 @@ header {
     align-items: center;
 }
 
-.container_menu--header span {
-    color: var(--grey);
-    height: 2.5rem;
-    width: 2.5rem;
-    cursor: pointer;
-}
-
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 300,
-    'GRAD' -0,
-    'opsz' 48
-  }
-
 .logo--header {
-    text-decoration: none;
-    font-family: 'Anurati';
-    font-size: 2rem;
-    letter-spacing: 4px;
-    color: var(--black);
-    margin-left: 2rem;
+    width: 15rem;
 }
 
-.nav-menu {
-    display: none;
-}
-
-.search-btn {
+.container_menu--header .search-btn {
     cursor: pointer;
     background: none;
     border: none;
-    margin-right: .6rem;
+    margin-right: 1rem;
 }
 
-.search-btn span {
-    color: var(--grey);
+.container_menu--header .search-btn span {
+    color: var(--dark-grey);
+    width: 2.1rem;
+    height: 2.1rem;
+    transition: .3s all;
 }
 
-.link-login span {
-    color: var(--grey);
+.container_menu--header .search-btn span:hover {
+    color: var(--primary-bg);
+}
+
+.container_menu--header  .btn-menu {
+    cursor: pointer;
+    color: var(--dark-grey);
+}
+
+.container_menu--header .nav-menu {
+    display: none;
+}
+
+.container_menu--header .link-login span {
+    display: none;
 }
 
 /* Banner */
 .container--banner {
-    background-image: url(../assets/images/banner-image.png);
+    background-image: url(../assets/images/ninja-banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -84,7 +97,7 @@ header {
 }
 
 .container_text--banner p {
-    color: var(--cultured-lg);
+    color: var(--white);
 }
 
 .container_text--banner p:nth-child(1) {
@@ -174,7 +187,6 @@ header {
 
 .card-producto .infoCard-Container a {
     font-size: 1.6rem;
-    text-decoration: none;
     color: #000000;
 }
 
@@ -196,7 +208,6 @@ header {
 }
 
 .logo-info_links a {
-    text-decoration: none;
     font-family: 'Anurati';
     font-size: 2rem;
     letter-spacing: 4px;
@@ -212,7 +223,6 @@ header {
 .links-info_links a {
     font-size: 1.6rem;
     margin-bottom: .8rem;
-    text-decoration: none;
     color: var(--black);
 }
 
@@ -259,9 +269,9 @@ header {
     outline: none;
     }
 
-    .container_btn-form {
-        margin-bottom: 1.5rem;
-    }
+.container_btn-form {
+    margin-bottom: 1.5rem;
+}
 
 .container_btn-form button {
     padding: 1rem 1.5rem;
@@ -273,7 +283,6 @@ header {
 
 /* Footer */
 .container-footer {
-    border: 1px solid blue;
     text-align: center;
     padding: 2.5rem 0;
 }

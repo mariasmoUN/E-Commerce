@@ -16,8 +16,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"> 
+
     <!-- Favicon -->
-<!--     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 
     <!-- Título del sitio web -->
     <title>StoreKun</title>
@@ -25,25 +29,25 @@
 
 <body>
     <header>
-        <!-- Logo, buscador e inicio de sección -->
+        <!-- Logo, buscador, menu e inicio de sección -->
+        <img class="logo--header" src="./assets/icons/logo-AluraGeek.png" alt="Logo AluraGeek">
+
         <div class="container_menu--header">
-            <span class="material-symbols-outlined">menu</span>
-        </div>
-
-        <a href="#" class="logo--header">STOREKUN</a>
-        <nav class="nav-menu">
-            <a href="#">Inicio</a>
-            <a href="#">Star Wars</a>
-            <a href="#">Consolas</a>
-            <a href="#">Diversos</a>
-            <a href="#">Contacto</a>
-        </nav>
-
-        <div class="icons-conatiner">
             <button class="search-btn">
                 <span class="material-symbols-outlined">search</span>
             </button>
-    
+            
+            <span class="material-symbols-outlined btn-menu">menu</span>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Información</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+
             <a href="#" class="link-login">
                 <span class="material-symbols-outlined">login</span>
             </a>
