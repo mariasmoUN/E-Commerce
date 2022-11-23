@@ -136,6 +136,40 @@ header {
     color: var(--white);
 }
 
+.container-search.not-active {
+    display: none;
+}
+
+.container-search {
+    position: absolute;
+    width: 20rem;
+    background-color: rgba(211, 211, 211, 0.534);
+    top: 1.2rem;
+    right: 25%;
+    display: flex;
+    border-radius: .6rem;
+    padding: .5rem .3rem;
+}
+
+.container-search span.btn-close {
+    color: var(--dark);
+    cursor: pointer;
+    margin-right: .5rem;
+    transition: .3s all;
+}
+
+.container-search span.btn-close:hover {
+    color: var(--primary-bg);
+}
+
+.container-search input {
+    width: 17rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--dark-grey);
+}
+
 .container_menu--header .search-btn{
     color: var(--dark-grey);
     width: 2.1rem;
