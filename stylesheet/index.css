@@ -74,6 +74,47 @@ header {
     color: var(--primary-bg);
 }
 
+.nav-menu.not-active {
+    display: none;
+}
+
+.nav-menu.active {
+    position: absolute;
+    top: 5.6rem;
+    left: 0;
+    padding: 1rem;
+    background-color: var(--white);
+    border: 1px solid lightgray;
+    border-radius: 0 0 .3rem 0;
+    width: 70%;
+}
+
+.nav-menu.active li {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.nav-menu.active li span {
+    color: var(--light-grey);
+    margin-right: 1rem;
+    font-size: 2rem;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' -25,
+    'opsz' 48
+}
+
+.nav-menu.active li a {
+    color: var(--light-grey);
+    font-size: 1.4rem;
+}
+
 .container_menu--header .search-btn{
     color: var(--dark-grey);
     width: 2.1rem;
@@ -106,8 +147,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 0 2rem 1rem 2rem;
-    
+    margin-bottom: 1rem;
 }
 
 .container_logo--main img {
@@ -180,100 +220,108 @@ main {
 /* Sección Productos */
 .sec_galeriaProductos {
     margin: 3rem 2rem 0 2rem;
+    padding: 0 2.5rem;
     border-radius: 1.8rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     box-shadow: 0px 0px 28px -3px rgba(181,181,181,1);
 }
 
 .container-tipoProducto {
-    padding: 0 1rem;
-    max-width: 33.3rem;
     margin-bottom: 1rem;
 }
 
-.titulo-tipoProducto {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0;
-}
-
 .titulo-tipoProducto h2 {
+    padding: 2rem 0;
     font-size: 2rem;
     color: var(--dark-grey);
-}
-
-.titulo-tipoProducto div {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.titulo-tipoProducto div span {
-    font-size: 2rem;
-    color: var(--dark);
-    transition: .3s all;
-}
-
-.titulo-tipoProducto div span:hover {
-    color: var(--primary);
 }
 
 .cards-container-producto {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .card-producto {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;/* 
+    border: 1px solid blue; */
 }
 
 .card-producto picture img {
-    width: 15rem;
-    margin-bottom: .8rem;
-    border-radius: .5rem;
+    width: 10rem;
+    margin-right: 1rem;
+    border-radius: 1.5rem;
     filter: saturate(45%);
 }
 
 .card-producto .infoCard-Container {
     display: flex;
     flex-direction: column;
+    width: 100%;/* 
+    border: 1px solid firebrick; */
 }
 
-.infoCard-Container span {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: var(--dark);
-    margin-bottom: .5rem;
-}
-
-.infoCard-Container .container-verP {
+.infoCard-Container .container-name {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    cursor: pointer;
 }
 
-.infoCard-Container .container-verP span:nth-child(1) {
+.infoCard-Container .container-name span:nth-child(1) {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+.infoCard-Container .container-name span:nth-child(2) {
+    background-color: transparent;
+    color: var(--dark);
+    font-size: 2rem;
+    width: 2rem;
+    margin-bottom: 1rem;
+}
+
+.infoCard-Container span.other-text1 {
+    font-size: 1.2rem;
+    color: var(--light-grey);
+    margin-bottom: 1rem;
+}
+
+.infoCard-Container span.other-text2 {
     width: 6rem;
+    height: 1.7rem;
     font-size: 1.3rem;
     font-weight: bold;
     color: var(--white);
     background-color: var(--primary-md);
-    margin-bottom: .5rem;
     text-align: center;
     border-radius: .5rem;
 }
 
-.infoCard-Container .container-verP span:nth-child(2) {
-    background-color: transparent;
-    color: var(--light-grey);
+.container-VerTodo--Productos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark);
+    border-radius: 1.5rem;
+    padding: 1.5rem 0;
+    margin-bottom: 3rem;
+}
+
+.container-VerTodo--Productos span {
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.container-VerTodo--Productos span:nth-child(2) {
     font-size: 1.8rem;
-    width: 2rem;
+    margin: .3rem 0 0 .5rem;
 }
 
 /* Links */
