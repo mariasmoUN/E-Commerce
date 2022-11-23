@@ -347,7 +347,7 @@ main {
 
 /* Formulario */
 .container_form {
-    margin-top: 3rem 2rem;
+    margin-top: 3rem;
     padding: 3rem;
     border-radius: 1.8rem;
     display: flex;
@@ -420,11 +420,29 @@ main {
 }
 
 /* Footer */
-/* .container-footer {
+.container-footer {
     text-align: center;
     padding: 2.5rem 0;
 }
 
-.container-footer p {
+.container-footer span:nth-child(1),
+.container-footer span:nth-child(3) {
     font-size: 1.2rem;
-} */
+    color: var(--light-grey);
+}
+
+.container-footer span.material-symbols-outlined {
+    font-size: 1.4rem;
+    color: var(--primary-bg);
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 200,
+    'GRAD' -25,
+    'opsz' 48
+}
+
+.container-footer span:nth-child(4) {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-bg);
+}
