@@ -7,26 +7,26 @@
     <meta name="description" content="E-Commerce | Challenge ONE: Oracle Next Education">
     <meta name="robots" content="index,follow">
 
-    <!-- Hojas de estilo -->
+    <!-- ===== Hojas de estilo ===== -->
     <link rel="stylesheet" href="./stylesheet/index.css">
     <link rel="stylesheet" href="./stylesheet/tablet.css" media="screen and (min-width: 760px)">
     <link rel="stylesheet" href="./stylesheet/desktop.css" media="screen and (min-width: 980px)">
 
-    <!-- Iconos -->
+    <!-- ===== Iconos ===== -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <!-- Fontawesome -->
+    <!-- ===== Fontawesome ===== -->
     <script src="https://kit.fontawesome.com/ae0fd6f99f.js" crossorigin="anonymous"></script>
 
-    <!-- Fuentes -->
+    <!-- ===== Fuentes ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"> 
 
-    <!-- Favicon -->
+    <!-- ===== Favicon ===== -->
 
-    <!-- Título del sitio web -->
+    <!-- ===== Título del sitio web ===== -->
     <title>AluraGeek</title>
 </head>
 
@@ -36,22 +36,23 @@
             <span class="material-symbols-outlined btn-menu not-active">menu</span>
 
             <nav class="nav-menu not-active">
+                <h2>Opciones</h2>
                 <ul>
                     <li>
                         <span class="material-symbols-outlined">home</span>
-                        <a href="#">Inicio</a>
+                        <a href="#home">Inicio</a>
                     </li>
                     <li>
                         <span class="material-symbols-outlined">shopping_bag</span>
-                        <a href="#">Productos</a>
+                        <a href="#productos">Productos</a>
                     </li>
                     <li>
                         <span class="material-symbols-outlined">info</span>
-                        <a href="#">Información</a>
+                        <a href="#info">Información</a>
                     </li>
                     <li>
                         <span class="material-symbols-outlined">mail</span>
-                        <a href="#">Contacto</a>
+                        <a href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </nav> 
@@ -66,7 +67,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="home">
         <div class="container_logo--main">
             <img src="./assets/icons/logo-AluraGeek.png" alt="Logo AluraGeek">
         </div>
@@ -88,7 +89,7 @@
             </div>
         </section>
     
-        <section class="sec_galeriaProductos">
+        <section class="sec_galeriaProductos" id="productos">
 
             <!-- ===== Star Wars ===== -->
             <div class="container-tipoProducto">
@@ -325,7 +326,7 @@
             </div>
         </section>
     
-        <section class="sec_form">
+        <section class="sec_form" id="info">
             <div class="container-info_contacto">
                 <div class="container-info_links">
                     <div class="logo-info_links">
@@ -354,7 +355,7 @@
                     </div>
                 </div>
 
-                <div class="container_form">
+                <div class="container_form" id="contacto">
                     <h2>Hable con nosotros</h2>
 
                     <div class="container_inputs-form">

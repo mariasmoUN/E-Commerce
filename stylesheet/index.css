@@ -87,6 +87,18 @@ header {
     border: 1px solid lightgray;
     border-radius: 0 0 .3rem 0;
     width: 70%;
+    height: 100vh;
+}
+
+.nav-menu.active h2 {
+    margin: 1rem 0 0 3rem;
+    font-size: 1.4rem;
+    color: var(--light-grey);
+    font-weight: 400;
+}
+
+.nav-menu.active ul {
+    border-bottom: 1px solid lightgray;
 }
 
 .nav-menu.active li {
@@ -113,6 +125,15 @@ header {
 .nav-menu.active li a {
     color: var(--light-grey);
     font-size: 1.4rem;
+}
+
+.nav-menu.active ul li:hover {
+    background-color: var(--primary-bg);
+}
+
+.nav-menu.active ul li:hover span,
+.nav-menu.active ul li:hover a {
+    color: var(--white);
 }
 
 .container_menu--header .search-btn{
