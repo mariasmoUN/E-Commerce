@@ -217,6 +217,14 @@ main {
     width: 20rem;
 }
 
+main .main-title {
+    display: none;
+}
+
+main .main-text {
+    display: none;
+}
+
 /* Banner */
 .container--banner {
     background-color: var(--primary-bg);

@@ -13,8 +13,7 @@ header {
     box-shadow: none;
 }
 
-.container_menu--header {/* 
-    border: 1px solid firebrick; */
+.container_menu--header {
     flex-direction: column;
 }
 
@@ -81,4 +80,30 @@ header {
 
 .container_menu--header .nav2 a {
     display: none;
+}
+
+/* Main */
+main {
+    padding-top: 0;
+}
+
+.container_logo--main {
+    display: none;
+}
+
+main .main-title {
+    display: block;
+    padding: 2rem 5rem .5rem 5rem;
+    color: var(--dark-grey);
+    font-size: 1.6rem;/* 
+    border: 1px solid firebrick; */
+}
+
+main .main-text {
+    display: block;
+    padding: 0 5rem 5rem 5rem;
+    color: var(--dark);
+    font-size: 2.5rem;
+    font-weight: bold;/* 
+    border: 1px solid firebrick; */
 }
