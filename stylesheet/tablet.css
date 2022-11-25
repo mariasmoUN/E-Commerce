@@ -93,17 +93,69 @@ main {
 
 main .main-title {
     display: block;
-    padding: 2rem 5rem .5rem 5rem;
+    padding: 3rem 5rem .5rem 5rem;
     color: var(--dark-grey);
-    font-size: 1.6rem;/* 
-    border: 1px solid firebrick; */
+    font-size: 1.6rem;
 }
 
 main .main-text {
     display: block;
-    padding: 0 5rem 5rem 5rem;
+    padding: 0 5rem 4.5rem 5rem;
     color: var(--dark);
     font-size: 2.5rem;
-    font-weight: bold;/* 
-    border: 1px solid firebrick; */
+    font-weight: bold;
+}
+
+/* Banner */
+.container--banner {
+    margin: 0 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.container_text--banner {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    grid-template-rows: 33% 33% 33%;
+}
+
+.container_text--banner .container_img--banner {
+    width: 23.5rem;
+    justify-content: flex-end;
+    margin: .5rem .5rem .5rem 0;
+    grid-area: 1 / 2 / 4 / 2;
+}
+
+.container_img--banner img {
+    width: 23rem;
+    object-fit: contain;
+}
+
+.container_text--banner p:nth-child(2) {
+    width: 34rem;
+    margin: 0;
+    text-align: start;
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 4rem 0 0 3rem;
+}
+
+.container_text--banner p:nth-child(3) {
+    width: 34rem;
+    margin: 0;
+    text-align: start;
+    font-size: 1.4rem;
+    padding: .8rem 0 1rem 3rem;
+}
+
+.container_button--banner {
+    width: 34rem;
+    justify-content: flex-start;
+    padding: 0 0 4rem 3rem;
+}
+
+.container_button--banner button {
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
 }
