@@ -159,3 +159,21 @@ main .main-text {
     padding: 1.5rem 2rem;
     font-size: 1.4rem;
 }
+
+/* Sección Productos */
+.sec_galeriaProductos {
+    margin: 2rem 5rem;
+}
+
+.cards-container-producto {
+    /* border: 1px solid blueviolet; */
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 48% 48%;
+    gap: 2%;
+    margin-bottom: 1rem;
+}
+
+.infoCard-Container .container-name span:nth-child(2) {
+    color: var(--white);
+}
