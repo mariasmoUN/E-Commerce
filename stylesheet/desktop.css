@@ -1,13 +1,62 @@
 /* Header */
 header {
-    padding: 1.5rem 6rem;
+    width: 22rem;
 }
 
-.container_menu--header {
+.container_menu--header .btn-menu {
     display: none;
 }
 
-.logo--header {
-    font-size: 2.5rem;
-    margin-left: 0;
+.container_menu--header .medioLogo--header {
+    display: none;
+}
+
+.container_menu--header .logo--header {
+    display: inline;
+    width: 15rem;
+    margin-top: 3rem;
+}
+
+.container_links_right--header {
+    align-items: flex-start;
+    margin: 2.5rem 0 0 5rem;
+}
+
+.container_menu--header .link-login {
+    display: flex;
+    align-items: center;
+}
+
+.container_menu--header .link-login p {
+    display: inline;
+    color: var(--light-grey);
+    font-size: 1.4rem;
+    margin-left: 2rem;
+} 
+
+.container_menu--header .nav2 {
+    width: 100%;
+    padding: 0;
+    align-items: flex-start;
+    border: none;
+}
+
+.container_menu--header .nav2 li {
+    display: flex;
+    border-radius: 1rem;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 0 3rem 3rem;
+    transition: .3s all;
+}
+
+.container_menu--header .nav2 span {
+    margin-bottom: 0;
+}
+
+.container_menu--header .nav2 a {
+    display: inline-block;
+    color: var(--light-grey);
+    font-size: 1.4rem;
+    margin-left: 1.5rem;
 }

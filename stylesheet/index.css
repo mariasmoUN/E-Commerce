@@ -74,6 +74,10 @@ header {
     display: none;
 }
 
+.container_menu--header .logo--header {
+    display: none;
+}
+
 .nav-menu.not-active {
     display: none;
 }
@@ -191,6 +195,10 @@ header {
     cursor: pointer;
     transition: .3s all;
     color: var(--dark-grey);
+} 
+
+.container_menu--header .link-login p {
+    display: none;
 } 
 
 .container_menu--header .link-login span:hover {
