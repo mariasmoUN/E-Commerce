@@ -40,11 +40,7 @@ html {
 }
 
 /* Header */
-
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     padding: 1.5rem 2.5rem;
     backdrop-filter: initial;
@@ -60,122 +56,12 @@ header {
     align-items: center;
 }
 
-.container_menu--header  .btn-menu {
-    cursor: pointer;
-    transition: .3s all;
-    color: var(--dark-grey);
-}
-
-.container_menu--header  .btn-menu:hover {
-    color: var(--primary-bg);
-}
-
 .container_menu--header .medioLogo--header {
     display: none;
 }
 
 .container_menu--header .logo--header {
-    display: none;
-}
-
-.nav-menu.not-active {
-    display: none;
-}
-
-.nav-menu.active {
-    position: absolute;
-    top: 5.6rem;
-    left: 0;
-    padding: 1rem;
-    background-color: var(--white);
-    border: 1px solid lightgray;
-    border-radius: 0 0 .3rem 0;
-    width: 70%;
-    height: 100vh;
-}
-
-.nav-menu.active h2 {
-    margin: 1rem 0 0 3rem;
-    font-size: 1.4rem;
-    color: var(--light-grey);
-    font-weight: 400;
-}
-
-.nav-menu.active ul {
-    border-bottom: 1px solid lightgray;
-}
-
-.nav-menu.active li {
-    display: flex;
-    align-items: center;
-    margin: 2rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: .3s all;
-}
-
-.nav-menu.active li span {
-    color: var(--light-grey);
-    margin-right: 1rem;
-    font-size: 2rem;
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 300,
-    'GRAD' -25,
-    'opsz' 48
-}
-
-.nav-menu.active li a {
-    color: var(--light-grey);
-    font-size: 1.4rem;
-}
-
-.nav-menu.active ul li:hover {
-    background-color: var(--primary-bg);
-}
-
-.nav-menu.active ul li:hover span,
-.nav-menu.active ul li:hover a {
-    color: var(--white);
-}
-
-.container_menu--header .nav2 {
-    display: none;
-}
-
-.container-search.not-active {
-    display: none;
-}
-
-.container-search {
-    position: absolute;
-    width: 20rem;
-    background-color: rgba(211, 211, 211, 0.534);
-    top: 1.2rem;
-    right: 25%;
-    display: flex;
-    border-radius: 1rem;
-    padding: .5rem .3rem;
-}
-
-.container-search span.btn-close {
-    color: var(--dark);
-    cursor: pointer;
-    margin-right: .5rem;
-    transition: .3s all;
-}
-
-.container-search span.btn-close:hover {
-    color: var(--primary-bg);
-}
-
-.container-search input {
-    width: 17rem;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: var(--dark-grey);
+   width: 15rem;
 }
 
 .container_menu--header .search-btn{
@@ -187,27 +73,26 @@ header {
     margin-right: 1rem;
 }
 
-.container_menu--header .search-btn:hover {
-    color: var(--primary-bg);
-}
-
 .container_menu--header .link-login span {
     cursor: pointer;
+    font-size: 2.8rem;
     transition: .3s all;
     color: var(--dark-grey);
-} 
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 300,
+    'GRAD' -25,
+    'opsz' 48
+}
 
-.container_menu--header .link-login p {
-    display: none;
-} 
-
+.container_menu--header .search-btn:hover,
 .container_menu--header .link-login span:hover {
     color: var(--primary-bg);
 }
 
 /* Main */
 main {
-    padding-top: 6rem;
+    padding-top: 2rem;
 }
 
 .container_logo--main {
